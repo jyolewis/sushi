@@ -1,69 +1,18 @@
-{{#if isLang}} 
 <div class="container">
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        {{#link-to 'index'}}<span class="navbar-brand">Welcome to SushiSumo~&reg;</span>{{/link-to}}
-      </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right" style="font-size: 12pt;">
-          <li id="menu-noshow">{{#link-to 'menu'}}Menu{{/link-to}}</li>
-          <li>{{#link-to 'hours'}}Opening Hours{{/link-to}}</li>
-          <li>{{#link-to ''}}About Us{{/link-to}}</li>
-          <li>{{#link-to ''}}[TEL]:514-XXX-XXXX{{/link-to}}</li>
-          {{#if isLang}}
-          <li><button {{action 'fr'}}>[fr]</button></li>
-          {{else}}
-              <li><button {{action 'eng' }}>[eng]</button></li>
-          {{/if}}
-
-        </ul>
-      </div>
-    </div>
-    </div>
+	{{outlet}}
 </div>
 
-<div class="container">
-{{outlet}}
-</div>
+<!--FOOTER -->
 
-{{else}}
- <!-- english -->
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        {{#link-to 'index'}}<span class="navbar-brand">{{view.welcome}}&reg;</span>{{/link-to}}
-      </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right" style="font-size: 12pt;">
-          <li id="menu-noshow">{{#link-to 'menu'}}{{view.menu}}{{/link-to}}</li>
-          <li>{{#link-to 'hours'}}{{view.opening}}{{/link-to}}</li>
-          <li>{{#link-to ''}}{{view.about}}{{/link-to}}</li>
-          <li>{{#link-to ''}}{{view.tel}}{{/link-to}}</li>
-          {{#if isLang}}
-          <li><button {{action 'fr'}}>[fr]</button></li>
-          {{else}}
-              <li><button {{action 'eng' }}>[eng]</button></li>
-          {{/if}}
 
-        </ul>
-      </div>
-    </div>
-    </div>
-  {{/if}}
 
-<div class="container" style="max-width:1200px; padding-bottom:10px;">
-{{outlet}}
+
+
+
+
+
+<div class="col-md-12" style="background: #1a1a1a;">
+	<footer>
+		<p style="text-align: center; background: #1a1a1a;color: white;">&copy; 2014 OgigaWebWorks, Inc.</p>
+	</footer>
 </div>
