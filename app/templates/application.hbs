@@ -1,30 +1,17 @@
-<!-- NAVBAR
-================================================== -->
 <div class="container">
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="in.html">Bienvenue à Sumo Sushi Bar&reg;</a>
-      </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right" style="font-size: 12pt;">
-          <li id="menu-noshow">{{#link-to ''}}Menu{{/link-to}}</li>
-          <li>{{#link-to ''}}Heure d'ouverture{{/link-to}}</li>
-          <li>{{#link-to ''}}À propos{{/link-to}}</li>
-          <li>{{#link-to ''}}[TEL]:514-XXX-XXXX{{/link-to}}</li>
-          <li class="eng-flag">{{#link-to ''}}{{/link-to}}</li>
-        </ul>
-      </div>
-    </div>
-    </div>
+	{{outlet}}
 </div>
 
-<div class="container" style="max-width:1200px">
-{{outlet}}
+
+
+
+
+
+
+<!--FOOTER -->
+
+<div class="col-md-12 foot">
+	<footer>
+		<p style="text-align: center; background: #1a1a1a;color: white;">&copy; 2014 OgigaWebWorks, Inc.</p>
+	</footer>
 </div>

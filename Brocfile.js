@@ -10,6 +10,7 @@ app.import('bower_components/bootstrap/dist/css/bootstrap.min.css');
 app.import('bower_components/bootstrap/dist/js/bootstrap.min.js');
 
 
+
 //
 // If you need to use different assets in different
 // environments, specify an object as the first parameter. That
