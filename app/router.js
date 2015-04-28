@@ -9,14 +9,14 @@ Router.map(function() {
 	this.route('menu');
 	this.route('hours');
 	
-	this.resource('eng', function() {
+	/*this.resource('eng', function() {
 		this.resource('/');
 	});
 
 	this.resource('fr', function() {
 		this.resource('/');
-	}); 
-});
+	}); */
+}); 
 
 
 export default Router.map(function() {

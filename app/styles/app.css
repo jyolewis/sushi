@@ -16,3 +16,12 @@
 .foot-links {
 	list-style-type: none;
 }
+
+.foot {
+	background: #1a1a1a;
+}
+
+.centered {
+	text-align:center;
+	margin-top: 15px;
+}
